@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register — Stackly Property Valuation</title>
+  <meta name="description" content="Demo registration for Stackly Property Valuation. Creates a localStorage session and routes Client or Admin.">
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;0,9..144,600;1,9..144,450;1,9..144,560&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=pre1">
+  <link rel="stylesheet" href="css/pages.css?v=vis2">
+  <link rel="stylesheet" href="css/responsive.css?v=auth3">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to form</a>
+  <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Opening the survey desk">
+    <div class="preloader-grid" aria-hidden="true"></div>
+    <div class="preloader-plate">
+      <span class="preloader-crop is-tl" aria-hidden="true"></span>
+      <span class="preloader-crop is-tr" aria-hidden="true"></span>
+      <span class="preloader-crop is-bl" aria-hidden="true"></span>
+      <span class="preloader-crop is-br" aria-hidden="true"></span>
+      <p class="kicker">Stackly Valuation</p>
+      <div class="preloader-sight" aria-hidden="true">
+        <span class="sight-ring"></span>
+        <span class="sight-cross"></span>
+      </div>
+      <p class="preloader-word" data-pre-word>Measure</p>
+      <div class="meter" aria-hidden="true"><span></span></div>
+      <div class="meter-row">
+        <span data-meter>00</span>
+        <span data-pre-stage>Opening desk</span>
+        <span>Bengaluru</span>
+      </div>
+    </div>
+  </div>
+  <main id="main" class="auth">
+    <section class="auth-card is-wide" data-aos="fade-up">
+      <form class="auth-form" data-register novalidate>
+        <div class="auth-brand">
+          <a class="mark" href="index.html"><img src="img/stackly-pv.webp" alt="Stackly Property Valuation" width="180" height="51"></a>
+        </div>
+        <p class="kicker">File enrolment</p>
+        <h1>Create an account</h1>
+        <p class="lead">Tell us who stands on the instruction. Demo only — nothing is stored on a server. Named clocks still apply.</p>
+        <div class="is-full" data-field>
+          <p class="auth-label" id="reg-role">Account type</p>
+          <div class="auth-roles" role="radiogroup" aria-labelledby="reg-role">
+            <label class="auth-role"><input type="radio" name="role" value="client" required checked> Client</label>
+            <label class="auth-role"><input type="radio" name="role" value="admin"> Admin</label>
+          </div>
+        </div>
+        <div class="is-full" data-field>
+          <label for="r-name">Full name</label>
+          <input id="r-name" name="name" type="text" required autocomplete="name" placeholder="Name as on the instruction">
+          <p class="field-error">Enter your name.</p>
+        </div>
+        <div data-field>
+          <label for="r-city">City of the asset</label>
+          <input id="r-city" name="city" type="text" required autocomplete="address-level2" placeholder="As on the title set" >
+          <p class="field-error">Enter the city.</p>
+        </div>
+        <div data-field>
+          <label for="r-mobile">Mobile number</label>
+          <input id="r-mobile" name="mobile" type="tel" required autocomplete="tel" inputmode="numeric" placeholder="10-digit mobile">
+          <p class="field-error">Enter a mobile number.</p>
+        </div>
+        <div class="is-full" data-field>
+          <label for="r-email">Email address</label>
+          <input id="r-email" name="email" type="email" required autocomplete="email" placeholder="name@firm.demo">
+          <p class="field-error">Enter a valid email.</p>
+        </div>
+        <div class="is-full" data-field>
+          <label for="r-asset">Asset of interest</label>
+          <select id="r-asset" name="asset" required>
+            <option value="">Select a line</option>
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Industrial</option>
+            <option>Bank panel</option>
+            <option>Plant &amp; machinery</option>
+            <option>Agricultural</option>
+            <option>Litigation support</option>
+            <option>Portfolio / desktop</option>
+          </select>
+          <p class="field-error">Select an asset class.</p>
+        </div>
+        <div data-field>
+          <label for="r-pass">Password</label>
+          <div class="pass-wrap">
+            <input id="r-pass" name="password" type="password" required minlength="6" autocomplete="new-password" placeholder="At least 6 characters">
+            <button type="button" class="pass-toggle" data-pass="#r-pass">Show</button>
+          </div>
+          <p class="field-error">At least 6 characters.</p>
+        </div>
+        <div data-field>
+          <label for="r-confirm">Confirm password</label>
+          <div class="pass-wrap">
+            <input id="r-confirm" name="confirm" type="password" required minlength="6" autocomplete="new-password" placeholder="Re-enter password">
+            <button type="button" class="pass-toggle" data-pass="#r-confirm">Show</button>
+          </div>
+          <p class="field-error">Confirm the password.</p>
+        </div>
+        <div class="is-full auth-terms" data-field>
+          <label>
+            <input type="checkbox" name="terms" required>
+            <span>I accept the demo terms. GST is extra on every fee.</span>
+          </label>
+          <p class="field-error">Accept the terms to continue.</p>
+        </div>
+        <button class="btn auth-submit" type="submit">Create account</button>
+        <p class="auth-switch">Already filed? <a href="login.html">Sign in</a></p>
+        <a class="auth-back" href="index.html">← Back</a>
+      </form>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js?v=pre1"></script>
+</body>
+</html>

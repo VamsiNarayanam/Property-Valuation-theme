@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client file — Stackly Property Valuation</title>
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=pre1">
+  <link rel="stylesheet" href="css/dashboard.css?v=dash7">
+  <link rel="stylesheet" href="css/responsive.css?v=dash7">
+</head>
+<body class="dash" data-role="client">
+  <div class="dash-scrim"></div>
+  <div class="dash-shell">
+    <aside class="dash-side">
+      <a class="mark" href="index.html"><img src="img/stackly-pv.webp" alt="Stackly Property Valuation" width="160" height="45"></a>
+      <nav class="side-nav" aria-label="Client">
+        <button type="button" class="is-on" data-panel="overview">Overview</button>
+        <button type="button" data-panel="file">File</button>
+        <button type="button" data-panel="docs">Documents</button>
+        <button type="button" data-panel="drafts">Working papers</button>
+        <button type="button" data-panel="invoices">Invoices</button>
+        <button type="button" data-panel="messages">Messages</button>
+        <button type="button" data-panel="tasks">Tasks</button>
+        <button type="button" data-panel="settings">Settings</button>
+      </nav>
+      <div class="side-foot">
+        <button class="btn dash-logout" type="button" data-logout>Logout</button>
+        <button class="btn btn-ghost" type="button" data-side-close>Close menu</button>
+      </div>
+    </aside>
+    <div class="dash-main">
+      <header class="dash-top">
+        <button class="dash-burger" type="button" aria-label="Open menu">☰</button>
+        <h1 data-panel-title>Overview</h1>
+        <div class="dash-top-actions">
+          <div class="who" data-who>
+            <span class="who-mark" data-who-initials></span>
+            <span class="who-copy">
+              <strong data-who-name></strong>
+              <em data-who-mail></em>
+            </span>
+          </div>
+          <button class="btn btn-ghost" type="button" data-logout>Logout</button>
+        </div>
+      </header>
+      <div class="dash-panels">
+        <section class="panel is-on" id="panel-overview">
+          <header class="panel-head">
+            <p class="kicker">SPV-086 · week 7</p>
+            <h2>Koramangala duplex is live</h2>
+            <p class="lead">Site photographs are in. Working papers are open. The next client action is the parking deed scan — Rev 01 will not issue without it.</p>
+          </header>
+          <div class="stat-grid">
+            <article class="stat"><p class="lbl">Live file</p><p class="n file-id">SPV-086</p></article>
+            <article class="stat"><p class="lbl">Fee (ex-GST)</p><p class="n">₹62,000</p></article>
+            <article class="stat"><p class="lbl">Week</p><p class="n">7 / 11</p></article>
+            <article class="stat"><p class="lbl">Revisions left</p><p class="n">2</p></article>
+          </div>
+          <div class="now-next">
+            <article class="now-card">
+              <img src="img/rail-04.webp" alt="Koramangala duplex on the live file" width="800" height="500">
+              <div class="body">
+                <p class="kicker">Now</p>
+                <h2>Koramangala duplex — site complete</h2>
+                <p>24 photographs logged. Occupied. Parking deed still required before the comparable sheet can close.</p>
+              </div>
+            </article>
+            <article class="next-card">
+              <p class="kicker">Next inspection</p>
+              <h2>None booked</h2>
+              <p>Residential starting line ₹45,000 + GST if you open a second file. Remote slot available Thu 18 Sep 2026, 11:00 IST.</p>
+              <a class="btn" href="404.html">Instruct another</a>
+            </article>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>Hold on the file</h3>
+              <p>Parking bay is shown on the floor plan but not on the registered deed. Upload a scan under Documents. Survey desk will not start Rev 01 until it is in.</p>
+            </article>
+            <article class="note-card">
+              <h3>Fee this week</h3>
+              <p>Retainer INV-086-A is paid. Balance INV-086-B issues with the signed report. Confirm GSTIN under Settings if the firm name on the invoice must change.</p>
+            </article>
+          </div>
+          <div class="dash-timeline">
+            <article class="tl-row">
+              <span class="when">12 Sep</span>
+              <div><h3>Parking deed chase</h3><p>Survey desk marked the file Halt until the scan is received.</p></div>
+              <span class="badge badge-halt">Due</span>
+            </article>
+            <article class="tl-row">
+              <span class="when">10 Sep</span>
+              <div><h3>Site photographs filed</h3><p>24 frames. Re-take not required. Occupied kitchen and rear elevation used as comps.</p></div>
+              <span class="badge badge-filed">Filed</span>
+            </article>
+            <article class="tl-row">
+              <span class="when">04 Sep</span>
+              <div><h3>Inspection complete</h3><p>Rahul Deshpande on site 09:40–12:15 IST. Measured 186 m² built-up.</p></div>
+              <span class="badge badge-live">Live</span>
+            </article>
+            <article class="tl-row">
+              <span class="when">22 Aug</span>
+              <div><h3>Instruction accepted</h3><p>Mortgage · bank panel. Market value and force-sale as at inspection date.</p></div>
+              <span class="badge">Open</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-file">
+          <header class="panel-head">
+            <p class="kicker">Instruction · mortgage</p>
+            <h2>File SPV-086</h2>
+            <p class="lead">Market value and force-sale value as at the inspection date. Occupied. This is not a structural certificate and not a title opinion.</p>
+          </header>
+          <div class="file-meta">
+            <article><p class="lbl">Instruction</p><p class="n">Mortgage · bank panel</p></article>
+            <article><p class="lbl">Fee</p><p class="n">₹62,000 + GST</p></article>
+            <article><p class="lbl">Weeks</p><p class="n">7 of 11</p></article>
+            <article><p class="lbl">Revisions left</p><p class="n">2</p></article>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>Asset</h3>
+              <ul>
+                <li>Koramangala 4th Block, Bengaluru 560034</li>
+                <li>Independent duplex · 186 m² built-up</li>
+                <li>Plot 2,400 sq ft · east facing</li>
+                <li>Occupied by the instructing party</li>
+              </ul>
+            </article>
+            <article class="note-card">
+              <h3>Parties on the file</h3>
+              <ul>
+                <li>Instructing: Asha Menon</li>
+                <li>Panel: demo private bank, MG Road</li>
+                <li>Valuer: Rahul Deshpande</li>
+                <li>Desk: Church Street, 09:30–18:00 IST</li>
+              </ul>
+            </article>
+          </div>
+          <div class="table-wrap" style="margin-top:1rem">
+            <table class="dash">
+              <thead><tr><th>Item</th><th>As instructed</th><th>As found</th></tr></thead>
+              <tbody>
+                <tr><td>Purpose</td><td>Mortgage security</td><td>Unchanged</td></tr>
+                <tr><td>Interest</td><td>Freehold</td><td>Freehold · parking deed missing</td></tr>
+                <tr><td>Tenure</td><td>Occupied</td><td>Occupied · kitchen in use</td></tr>
+                <tr><td>Basis</td><td>Market + force-sale</td><td>Working papers open</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="photo-plate">
+            <figure>
+              <img src="img/file-live.webp" alt="Measured elevation of the duplex" width="800" height="500">
+              <figcaption>Street elevation · 04 Sep</figcaption>
+            </figure>
+            <figure>
+              <img src="img/journal-01.webp" alt="Occupied kitchen photographed on site" width="800" height="500">
+              <figcaption>Kitchen · occupied</figcaption>
+            </figure>
+            <figure>
+              <img src="img/process-02.webp" alt="Tape measure on the inspection" width="800" height="500">
+              <figcaption>Measure log · 186 m²</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-docs">
+          <header class="panel-head">
+            <p class="kicker">Client uploads</p>
+            <h2>Documents on SPV-086</h2>
+            <p class="lead">Dummy files only. Nothing leaves this browser. The parking deed is the open hold.</p>
+          </header>
+          <div class="docs">
+            <article class="doc-row"><span>Title deed (dummy PDF)</span><span class="file-id">deed-086.pdf</span></article>
+            <article class="doc-row"><span>Khata extract</span><span class="file-id">khata-086.pdf</span></article>
+            <article class="doc-row"><span>Tax paid receipt 2025–26</span><span class="file-id">tax-086.pdf</span></article>
+            <article class="doc-row"><span>Approved plan (copy)</span><span class="file-id">plan-086.pdf</span></article>
+            <article class="doc-row"><span>Site photographs (24)</span><span class="file-id">SPV-086-photos</span></article>
+            <article class="doc-row"><span>Parking deed scan</span><span class="badge badge-halt">Missing</span></article>
+            <article class="doc-row"><span>Report PDF — not yet issued</span><span class="badge">Working</span></article>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>What we still need</h3>
+              <p>Registered parking bay deed or a letter from the association confirming the bay number shown on the plan. JPEG or PDF, under 12 MB.</p>
+            </article>
+            <article class="note-card">
+              <h3>Issued later</h3>
+              <p>The signed report, IBBI archive pack and bank covering letter appear here after issue. They are not available while the file is in working papers.</p>
+            </article>
+          </div>
+          <div class="cta-row">
+            <button class="btn" type="button" data-go-404>Mark deed as sent</button>
+            <a class="btn btn-ghost" href="404.html">Write the desk</a>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-drafts">
+          <header class="panel-head">
+            <p class="kicker">Working papers</p>
+            <h2>Drafts before issue</h2>
+            <p class="lead">These are internal sheets. They are not the report. Two client revisions remain after Rev 01 issues.</p>
+          </header>
+          <div class="docs">
+            <article class="doc-row"><span>Rev 00 — site notes</span><span class="file-id">WP-086-00</span></article>
+            <article class="doc-row"><span>Measure log · 186 m²</span><span class="file-id">WP-086-measure</span></article>
+            <article class="doc-row"><span>Comp sheet — Whitefield / Koramangala</span><span class="file-id">WP-086-comps</span></article>
+            <article class="doc-row"><span>Force-sale working</span><span class="file-id">WP-086-fs</span></article>
+            <article class="doc-row"><span>Photograph index (24)</span><span class="file-id">WP-086-pix</span></article>
+            <article class="doc-row"><span>Rev 01 — not started</span><span class="badge">Hold</span></article>
+          </div>
+          <div class="table-wrap" style="margin-top:1rem">
+            <table class="dash">
+              <thead><tr><th>Comparable</th><th>Distance</th><th>Date</th><th>INR / sq ft</th></tr></thead>
+              <tbody>
+                <tr><td>Whitefield row house</td><td>6.2 km</td><td>Jul 2026</td><td>11,400</td></tr>
+                <tr><td>Koramangala apartment</td><td>0.8 km</td><td>Aug 2026</td><td>13,250</td></tr>
+                <tr><td>Indiranagar bungalow</td><td>2.1 km</td><td>Jun 2026</td><td>14,100</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>Method on this file</h3>
+              <p>Sales comparison for the building. Land residual as a check. Force-sale is a discount to market, not a fire-sale listing price.</p>
+            </article>
+            <article class="note-card">
+              <h3>What you will see</h3>
+              <p>Rev 01 is the first client draft. Comments in writing within five working days. Two revisions are in the fee; a third is extra.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-invoices">
+          <header class="panel-head">
+            <p class="kicker">Fee · GST 18%</p>
+            <h2>Invoices on this file</h2>
+            <p class="lead">Retainer is paid. The balance invoice opens when the signed report issues. Demo figures only.</p>
+          </header>
+          <div class="stat-grid">
+            <article class="stat"><p class="lbl">Fee ex-GST</p><p class="n">₹62,000</p></article>
+            <article class="stat"><p class="lbl">GST 18%</p><p class="n">₹11,160</p></article>
+            <article class="stat"><p class="lbl">Paid</p><p class="n">₹36,580</p></article>
+            <article class="stat"><p class="lbl">Open</p><p class="n">₹36,580</p></article>
+          </div>
+          <div class="table-wrap">
+            <table class="dash">
+              <thead><tr><th>Invoice</th><th>Line</th><th>INR</th><th>GST</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td class="file-id">INV-086-A</td><td>Inspection retainer</td><td>₹31,000</td><td>18%</td><td>Paid · 24 Aug</td></tr>
+                <tr><td class="file-id">INV-086-B</td><td>Balance on issue</td><td>₹31,000</td><td>18%</td><td>Open</td></tr>
+                <tr><td class="file-id">INV-086-T</td><td>Travel (Bengaluru local)</td><td>₹0</td><td>—</td><td>Included</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>How the split works</h3>
+              <p>Half on instruction, half on issue. GST at 18% on both. A third revision, extra travel, or a second asset is a new line, not a discount on this fee.</p>
+            </article>
+            <article class="note-card">
+              <h3>GSTIN on the bill</h3>
+              <p>If the invoice must go to a firm, put the GSTIN under Settings before INV-086-B issues. Changes after issue need a credit note.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-messages">
+          <header class="panel-head">
+            <p class="kicker">Survey desk</p>
+            <h2>Messages</h2>
+            <p class="lead">Scheduling and document chases only. This demo does not send mail.</p>
+          </header>
+          <div class="msg-list">
+            <article class="msg"><span>Survey desk — parking deed still required before Rev 01.</span><span class="file-id">12 Sep</span></article>
+            <article class="msg"><span>Slot held: photograph re-take not needed. Occupied kitchen used as a comparable.</span><span class="file-id">10 Sep</span></article>
+            <article class="msg"><span>Rahul Deshpande — measure log closed at 186 m² built-up. Plot as per khata.</span><span class="file-id">04 Sep</span></article>
+            <article class="msg"><span>Church Street — instruction accepted. Week 1 of 11 starts 24 Aug.</span><span class="file-id">22 Aug</span></article>
+            <article class="msg"><span>Accounts — INV-086-A marked paid. Balance waits on issue.</span><span class="file-id">24 Aug</span></article>
+          </div>
+          <form class="compose" data-compose>
+            <label>Write the desk
+              <textarea name="note" placeholder="Parking deed will be uploaded by…"></textarea>
+            </label>
+            <button class="btn" type="submit">Send (demo)</button>
+          </form>
+        </section>
+
+        <section class="panel" id="panel-tasks">
+          <header class="panel-head">
+            <p class="kicker">Your actions</p>
+            <h2>Open tasks</h2>
+            <p class="lead">Only client actions sit here. Survey-desk work stays on the admin book.</p>
+          </header>
+          <div class="task-list">
+            <article class="task"><span>Upload parking deed scan</span><span class="badge badge-halt">Due 18 Sep</span></article>
+            <article class="task"><span>Confirm GSTIN on invoice B</span><span class="badge">Open</span></article>
+            <article class="task"><span>Confirm occupied status still true</span><span class="badge">Open</span></article>
+            <article class="task"><span>Name the association contact for the bay</span><span class="badge">Open</span></article>
+          </div>
+          <h3 class="kicker" style="margin-top:1.4rem">Closed this file</h3>
+          <div class="task-list" style="margin-top:.55rem">
+            <article class="task"><span>Pay retainer INV-086-A</span><span class="badge badge-filed">Paid</span></article>
+            <article class="task"><span>Grant site access 04 Sep</span><span class="badge badge-filed">Done</span></article>
+            <article class="task"><span>Send khata and tax receipt</span><span class="badge badge-filed">Filed</span></article>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-settings">
+          <header class="panel-head">
+            <p class="kicker">Client file</p>
+            <h2>Settings</h2>
+            <p class="lead">Display name and GSTIN print on invoices. Save stays in this browser only.</p>
+          </header>
+          <form class="settings-form" data-save>
+            <label>Display name<input type="text" name="name" value="Asha Menon"></label>
+            <label>Email<input type="email" name="email" value="client@stackly.demo"></label>
+            <label>Mobile<input type="tel" name="mobile" value="98450 00086"></label>
+            <label>City<input type="text" name="city" value="Bengaluru"></label>
+            <label>GSTIN (optional)<input type="text" name="gstin" placeholder="29AAAAA0000A1Z5"></label>
+            <label>Invoice name<input type="text" name="bill" value="Asha Menon"></label>
+            <label>Notify
+              <select name="notify">
+                <option selected>Desk messages and invoice</option>
+                <option>Invoice only</option>
+                <option>Off (demo)</option>
+              </select>
+            </label>
+            <button class="btn" type="submit">Save (demo)</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="js/dash.js?v=dash3"></script>
+</body>
+</html>

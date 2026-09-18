@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin book — Stackly Property Valuation</title>
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=pre1">
+  <link rel="stylesheet" href="css/dashboard.css?v=dash7">
+  <link rel="stylesheet" href="css/responsive.css?v=dash7">
+</head>
+<body class="dash" data-role="admin">
+  <div class="dash-scrim"></div>
+  <div class="dash-shell">
+    <aside class="dash-side">
+      <a class="mark" href="index.html"><img src="img/stackly-pv.webp" alt="Stackly Property Valuation" width="160" height="45"></a>
+      <nav class="side-nav" aria-label="Admin">
+        <button type="button" class="is-on" data-panel="overview">Overview</button>
+        <button type="button" data-panel="clients">Book of clients</button>
+        <button type="button" data-panel="pipeline">Pipeline</button>
+        <button type="button" data-panel="time">Time on survey</button>
+        <button type="button" data-panel="invoices">Invoices</button>
+        <button type="button" data-panel="queue">Report queue</button>
+        <button type="button" data-panel="messages">Messages</button>
+        <button type="button" data-panel="team">Team</button>
+        <button type="button" data-panel="settings">Settings</button>
+      </nav>
+      <div class="side-foot">
+        <button class="btn dash-logout" type="button" data-logout>Logout</button>
+        <button class="btn btn-ghost" type="button" data-side-close>Close menu</button>
+      </div>
+    </aside>
+    <div class="dash-main">
+      <header class="dash-top">
+        <button class="dash-burger" type="button" aria-label="Open menu">☰</button>
+        <h1 data-panel-title>Overview</h1>
+        <div class="dash-top-actions">
+          <div class="who" data-who>
+            <span class="who-mark" data-who-initials></span>
+            <span class="who-copy">
+              <strong data-who-name></strong>
+              <em data-who-mail></em>
+            </span>
+          </div>
+          <button class="btn btn-ghost" type="button" data-logout>Logout</button>
+        </div>
+      </header>
+      <div class="dash-panels">
+        <section class="panel is-on" id="panel-overview">
+          <header class="panel-head">
+            <p class="kicker">Church Street desk · 16 Sep</p>
+            <h2>Book this week</h2>
+            <p class="lead">Eighteen live files. Fort access is still closed on SPV-077. Parking deed hold on SPV-086. Hyderabad panel slot confirmed.</p>
+          </header>
+          <div class="stat-grid">
+            <article class="stat"><p class="lbl">Live files</p><p class="n">18</p></article>
+            <article class="stat"><p class="lbl">Cities this week</p><p class="n">4</p></article>
+            <article class="stat"><p class="lbl">Bank panels</p><p class="n">42</p></article>
+            <article class="stat"><p class="lbl">Avg. TAT days</p><p class="n">11</p></article>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>Halt</h3>
+              <p>SPV-077 Fort floor — security will not badge the valuer. Bank desk chasing access. Clock paused, not cancelled.</p>
+            </article>
+            <article class="note-card">
+              <h3>Due from client</h3>
+              <p>SPV-086 parking deed. Rev 01 blocked. Asha Menon last chased 12 Sep. Two revisions still in the fee after issue.</p>
+            </article>
+          </div>
+          <div class="table-wrap" style="margin-top:1rem">
+            <table class="dash">
+              <thead><tr><th>File</th><th>Asset</th><th>City</th><th>Valuer</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td class="file-id">SPV-086</td><td>Residential duplex</td><td>Bengaluru</td><td>R. Deshpande</td><td><span class="badge badge-halt">Deed</span></td></tr>
+                <tr><td class="file-id">SPV-081</td><td>Commercial floor</td><td>Mumbai</td><td>P. Shah</td><td>Working papers</td></tr>
+                <tr><td class="file-id">SPV-077</td><td>Commercial</td><td>Mumbai</td><td>R. Deshpande</td><td><span class="badge badge-halt">Access</span></td></tr>
+                <tr><td class="file-id">SPV-074</td><td>Residential</td><td>Bengaluru</td><td>M. Iyer</td><td>Issued</td></tr>
+                <tr><td class="file-id">SPV-211</td><td>Bank panel</td><td>Hyderabad</td><td>P. Shah</td><td><span class="badge badge-live">Slot</span></td></tr>
+                <tr><td class="file-id">SPV-205</td><td>Commercial</td><td>Mumbai</td><td>R. Deshpande</td><td>On site</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="dash-timeline">
+            <article class="tl-row">
+              <span class="when">Today</span>
+              <div><h3>Fort desk — SPV-077</h3><p>Access still closed. Do not send a second valuer until security clears the badge.</p></div>
+              <span class="badge badge-halt">Halt</span>
+            </article>
+            <article class="tl-row">
+              <span class="when">Yesterday</span>
+              <div><h3>Hyderabad panel — SPV-211</h3><p>Slot confirmed Thu 18 Sep, 11:00 IST. Remote protocol if the branch is locked.</p></div>
+              <span class="badge badge-live">Live</span>
+            </article>
+            <article class="tl-row">
+              <span class="when">12 Sep</span>
+              <div><h3>SPV-086 parking deed</h3><p>Client chase logged. Working papers remain open.</p></div>
+              <span class="badge">Open</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-clients">
+          <header class="panel-head">
+            <p class="kicker">Instructing parties</p>
+            <h2>Book of clients</h2>
+            <p class="lead">Homeowners, bank panels and one industrial instruction. Dummy names. Open files count live + working papers.</p>
+          </header>
+          <div class="stat-grid">
+            <article class="stat"><p class="lbl">Active clients</p><p class="n">11</p></article>
+            <article class="stat"><p class="lbl">Bank panels</p><p class="n">4</p></article>
+            <article class="stat"><p class="lbl">Homeowners</p><p class="n">6</p></article>
+            <article class="stat"><p class="lbl">Industrial</p><p class="n">1</p></article>
+          </div>
+          <div class="table-wrap">
+            <table class="dash">
+              <thead><tr><th>Client</th><th>Type</th><th>Open files</th><th>City</th><th>Last</th></tr></thead>
+              <tbody>
+                <tr><td>Asha Menon (demo)</td><td>Homeowner / panel</td><td>1</td><td>Bengaluru</td><td>12 Sep</td></tr>
+                <tr><td>Demo private bank</td><td>Bank panel</td><td>6</td><td>Mumbai</td><td>Today</td></tr>
+                <tr><td>Peenya Works (demo)</td><td>Industrial</td><td>1</td><td>Bengaluru</td><td>08 Sep</td></tr>
+                <tr><td>Whitefield owner (demo)</td><td>Residential</td><td>0</td><td>Bengaluru</td><td>Issued</td></tr>
+                <tr><td>Hyderabad branch (demo)</td><td>Bank panel</td><td>1</td><td>Hyderabad</td><td>Yesterday</td></tr>
+                <tr><td>MG Road floor (demo)</td><td>Commercial</td><td>1</td><td>Mumbai</td><td>11 Sep</td></tr>
+                <tr><td>HSR Layout (demo)</td><td>Insurance</td><td>1</td><td>Bengaluru</td><td>09 Sep</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>Panel notes</h3>
+              <p>Demo private bank wants covering letters on bank letterhead. Do not issue SPV-077 until Fort access is photographed.</p>
+            </article>
+            <article class="note-card">
+              <h3>New instruction</h3>
+              <p>Residential starting line ₹45,000 + GST. Bank-panel commercial from ₹85,000. Write the public instruction form or log it at the desk.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-pipeline">
+          <header class="panel-head">
+            <p class="kicker">Four stages</p>
+            <h2>Pipeline</h2>
+            <p class="lead">Instruction → site → working papers → issue. Halted files stay in their column with a reason, they do not leave the book.</p>
+          </header>
+          <div class="pipeline">
+            <div class="pipe-col">
+              <h3>Instruction</h3>
+              <div class="pipe-item">SPV-214 · Residential · BLR · fee accepted</div>
+              <div class="pipe-item">SPV-211 · Bank panel · HYD · slot Thu</div>
+              <div class="pipe-item">SPV-218 · Insurance · HSR · drone roof</div>
+            </div>
+            <div class="pipe-col">
+              <h3>On site</h3>
+              <div class="pipe-item">SPV-086 · Duplex · week 7 · deed hold</div>
+              <div class="pipe-item">SPV-205 · Commercial · BOM · today</div>
+              <div class="pipe-item">SPV-077 · Fort floor · access closed</div>
+            </div>
+            <div class="pipe-col">
+              <h3>Working papers</h3>
+              <div class="pipe-item">SPV-081 · MG Road floor · Rev 01</div>
+              <div class="pipe-item">SPV-066 · Insurance addendum</div>
+            </div>
+            <div class="pipe-col">
+              <h3>Issue</h3>
+              <div class="pipe-item">SPV-074 · Whitefield · Rev 02 signed</div>
+              <div class="pipe-item">SPV-061 · Archive pack · IBBI file</div>
+            </div>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>This week’s moves</h3>
+              <p>SPV-074 left working papers yesterday. SPV-211 enters On site on Thursday if the Hyderabad branch is open.</p>
+            </article>
+            <article class="note-card">
+              <h3>Do not advance</h3>
+              <p>SPV-086 stays On site until the parking deed is in. SPV-077 stays On site until Fort badges the valuer.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-time">
+          <header class="panel-head">
+            <p class="kicker">Week of 14 Sep</p>
+            <h2>Time on survey</h2>
+            <p class="lead">Hours include travel inside the city. Remote protocol counts as site if the walk-through is complete.</p>
+          </header>
+          <div class="table-wrap">
+            <table class="dash">
+              <thead><tr><th>Valuer</th><th>Hours this week</th><th>Files</th><th>Utilisation</th></tr></thead>
+              <tbody>
+                <tr><td>Rahul Deshpande</td><td>28.5</td><td>6</td><td>81%</td></tr>
+                <tr><td>Meera Iyer</td><td>22.0</td><td>4</td><td>63%</td></tr>
+                <tr><td>Priya Shah</td><td>31.0</td><td>7</td><td>89%</td></tr>
+                <tr><td>Survey desk</td><td>18.0</td><td>—</td><td>Scheduling</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>Rahul Deshpande</h3>
+              <p>Land &amp; building. Fort Thursday still blocked. Peenya plant Friday 10:00.</p>
+              <div class="meter-bar"><span style="width:81%"></span></div>
+            </article>
+            <article class="note-card">
+              <h3>Meera Iyer</h3>
+              <p>Plant and one residential issue. Capacity for a remote Whitefield slot Thursday.</p>
+              <div class="meter-bar"><span style="width:63%"></span></div>
+            </article>
+            <article class="note-card">
+              <h3>Priya Shah</h3>
+              <p>Residential remote protocol. Hyderabad panel Thursday. Do not add a fifth city this week.</p>
+              <div class="meter-bar"><span style="width:89%"></span></div>
+            </article>
+            <article class="note-card">
+              <h3>Desk</h3>
+              <p>Church Street 09:30–18:00 IST. Invoice B drafts wait on sign. No Saturday site without brass approval.</p>
+              <div class="meter-bar"><span style="width:52%"></span></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-invoices">
+          <header class="panel-head">
+            <p class="kicker">Accounts · GST 18%</p>
+            <h2>Invoices</h2>
+            <p class="lead">Hold lines stay open until access or documents clear. Paid retainers are not refundable once the site is done.</p>
+          </header>
+          <div class="stat-grid">
+            <article class="stat"><p class="lbl">Raised (ex-GST)</p><p class="n">₹4.8L</p></article>
+            <article class="stat"><p class="lbl">Collected</p><p class="n">₹3.1L</p></article>
+            <article class="stat"><p class="lbl">Open</p><p class="n">₹1.2L</p></article>
+            <article class="stat"><p class="lbl">On hold</p><p class="n">₹42.5k</p></article>
+          </div>
+          <div class="table-wrap">
+            <table class="dash">
+              <thead><tr><th>Invoice</th><th>Client</th><th>INR</th><th>GST</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td class="file-id">INV-086-A</td><td>Asha Menon</td><td>₹31,000</td><td>18%</td><td>Paid</td></tr>
+                <tr><td class="file-id">INV-086-B</td><td>Asha Menon</td><td>₹31,000</td><td>18%</td><td>Open · issue</td></tr>
+                <tr><td class="file-id">INV-081-A</td><td>Demo bank</td><td>₹85,000</td><td>18%</td><td>Paid</td></tr>
+                <tr><td class="file-id">INV-077-A</td><td>Demo bank</td><td>₹42,500</td><td>18%</td><td>Hold · access</td></tr>
+                <tr><td class="file-id">INV-074-B</td><td>Whitefield owner</td><td>₹22,500</td><td>18%</td><td>Paid</td></tr>
+                <tr><td class="file-id">INV-211-A</td><td>Hyderabad branch</td><td>₹55,000</td><td>18%</td><td>Open</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>Ageing</h3>
+              <p>INV-077-A is 19 days on hold. Do not send a reminder while Fort security is the block — the bank already has the chase.</p>
+            </article>
+            <article class="note-card">
+              <h3>GST</h3>
+              <p>Firm GSTIN 29AABCS1234A1ZX. Credit notes only after a signed report is withdrawn. Demo figures — no ledger behind this table.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-queue">
+          <header class="panel-head">
+            <p class="kicker">Sign and archive</p>
+            <h2>Report queue</h2>
+            <p class="lead">Rev 01 waits on a sign. Archive packs go to the IBBI file after the client copy issues.</p>
+          </header>
+          <div class="docs">
+            <article class="doc-row"><span>SPV-081 Rev 01 — awaiting sign</span><span class="badge badge-live">Queue</span></article>
+            <article class="doc-row"><span>SPV-066 insurance addendum</span><span class="badge">Draft</span></article>
+            <article class="doc-row"><span>SPV-074 archive pack</span><span class="badge">IBBI file</span></article>
+            <article class="doc-row"><span>SPV-061 covering letter · bank panel</span><span class="badge badge-filed">Ready</span></article>
+            <article class="doc-row"><span>SPV-086 Rev 01 — blocked on deed</span><span class="badge badge-halt">Hold</span></article>
+            <article class="doc-row"><span>SPV-205 site notes — not yet a draft</span><span class="badge">On site</span></article>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <h3>Sign-off order</h3>
+              <ul>
+                <li>Measure log closed</li>
+                <li>Comps dated and sourced</li>
+                <li>Photographs indexed</li>
+                <li>Partner sign on Rev 01</li>
+              </ul>
+            </article>
+            <article class="note-card">
+              <h3>Do not queue</h3>
+              <p>SPV-086 and SPV-077. A draft without access or title papers becomes a second revision the client did not buy.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-messages">
+          <header class="panel-head">
+            <p class="kicker">Internal + panel</p>
+            <h2>Messages</h2>
+            <p class="lead">Desk notes and bank chases. This demo does not send mail.</p>
+          </header>
+          <div class="msg-list">
+            <article class="msg"><span>Fort desk — SPV-077 access still closed. Do not redeploy Rahul.</span><span class="file-id">Today</span></article>
+            <article class="msg"><span>Hyderabad panel — SPV-211 slot confirmed Thu 18 Sep 11:00 IST.</span><span class="file-id">Yesterday</span></article>
+            <article class="msg"><span>Client Asha Menon — parking deed chase logged. Rev 01 blocked.</span><span class="file-id">12 Sep</span></article>
+            <article class="msg"><span>Priya Shah — MG Road Rev 01 ready for partner sign.</span><span class="file-id">11 Sep</span></article>
+            <article class="msg"><span>Accounts — INV-074-B paid. Archive pack can leave the queue.</span><span class="file-id">10 Sep</span></article>
+          </div>
+          <form class="compose" data-compose>
+            <label>Note to the book
+              <textarea name="note" placeholder="Fort security called back…"></textarea>
+            </label>
+            <button class="btn" type="submit">Log (demo)</button>
+          </form>
+        </section>
+
+        <section class="panel" id="panel-team">
+          <header class="panel-head">
+            <p class="kicker">Church Street · Fort · remote</p>
+            <h2>Team</h2>
+            <p class="lead">Three valuers and the survey desk. Hours sit under Time on survey.</p>
+          </header>
+          <div class="team-grid">
+            <article class="team-row">
+              <img src="img/valuer-01.webp" alt="Rahul Deshpande" width="200" height="200">
+              <div>
+                <p class="lbl">Rahul Deshpande</p>
+                <p>Land &amp; building · Fort Thu · Peenya Fri. Six live files. Access hold on SPV-077.</p>
+              </div>
+            </article>
+            <article class="team-row">
+              <img src="img/valuer-02.webp" alt="Meera Iyer" width="200" height="200">
+              <div>
+                <p class="lbl">Meera Iyer</p>
+                <p>Plant · Peenya. Whitefield Rev 02 issued. Capacity for one remote residential Thursday.</p>
+              </div>
+            </article>
+            <article class="team-row">
+              <img src="img/valuer-03.webp" alt="Priya Shah" width="200" height="200">
+              <div>
+                <p class="lbl">Priya Shah</p>
+                <p>Residential · remote protocol. Hyderabad panel Thursday. Do not add a fifth city.</p>
+              </div>
+            </article>
+            <article class="team-row">
+              <img src="img/office-blr.webp" alt="Church Street survey desk" width="200" height="200">
+              <div>
+                <p class="lbl">Survey desk</p>
+                <p>Church Street · 09:30–18:00 IST. Scheduling, invoices, IBBI archive. Saturday site needs brass approval.</p>
+              </div>
+            </article>
+          </div>
+          <div class="table-wrap" style="margin-top:1rem">
+            <table class="dash">
+              <thead><tr><th>Seat</th><th>City</th><th>This week</th></tr></thead>
+              <tbody>
+                <tr><td>Church Street</td><td>Bengaluru</td><td>Desk + SPV-086 chase</td></tr>
+                <tr><td>Fort viewing</td><td>Mumbai</td><td>SPV-077 blocked · SPV-205 on site</td></tr>
+                <tr><td>Remote protocol</td><td>—</td><td>SPV-211 Hyderabad Thu</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-settings">
+          <header class="panel-head">
+            <p class="kicker">Desk</p>
+            <h2>Settings</h2>
+            <p class="lead">Starting lines print on the public fee table. Save stays in this browser only.</p>
+          </header>
+          <form class="settings-form" data-save>
+            <label>Desk email<input type="email" name="email" value="desk@stacklyvaluation.demo"></label>
+            <label>GSTIN<input type="text" name="gstin" value="29AABCS1234A1ZX"></label>
+            <label>Starting residential (INR)<input type="text" name="res" value="45000"></label>
+            <label>Starting commercial (INR)<input type="text" name="com" value="85000"></label>
+            <label>Church Street hours<input type="text" name="hours" value="09:30–18:00 IST · Mon–Sat"></label>
+            <label>Default city
+              <select name="city">
+                <option selected>Bengaluru</option>
+                <option>Mumbai</option>
+                <option>Hyderabad</option>
+              </select>
+            </label>
+            <button class="btn" type="submit">Save (demo)</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="js/dash.js?v=dash3"></script>
+</body>
+</html>

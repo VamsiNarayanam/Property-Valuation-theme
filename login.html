@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in — Stackly Property Valuation</title>
+  <meta name="description" content="Demo login for Stackly Property Valuation. Client or Admin role. Session stored in localStorage only.">
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;0,9..144,600;1,9..144,450;1,9..144,560&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=pre1">
+  <link rel="stylesheet" href="css/pages.css?v=vis2">
+  <link rel="stylesheet" href="css/responsive.css?v=auth3">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to form</a>
+  <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Opening the survey desk">
+    <div class="preloader-grid" aria-hidden="true"></div>
+    <div class="preloader-plate">
+      <span class="preloader-crop is-tl" aria-hidden="true"></span>
+      <span class="preloader-crop is-tr" aria-hidden="true"></span>
+      <span class="preloader-crop is-bl" aria-hidden="true"></span>
+      <span class="preloader-crop is-br" aria-hidden="true"></span>
+      <p class="kicker">Stackly Valuation</p>
+      <div class="preloader-sight" aria-hidden="true">
+        <span class="sight-ring"></span>
+        <span class="sight-cross"></span>
+      </div>
+      <p class="preloader-word" data-pre-word>Measure</p>
+      <div class="meter" aria-hidden="true"><span></span></div>
+      <div class="meter-row">
+        <span data-meter>00</span>
+        <span data-pre-stage>Opening desk</span>
+        <span>Bengaluru</span>
+      </div>
+    </div>
+  </div>
+  <main id="main" class="auth">
+    <section class="auth-card" data-aos="fade-up">
+      <form class="auth-form" data-login novalidate>
+        <div class="auth-brand">
+          <a class="mark" href="index.html"><img src="img/stackly-pv.webp" alt="Stackly Property Valuation" width="180" height="51"></a>
+        </div>
+        <p class="kicker">SPV · Bengaluru</p>
+        <h1>Sign in</h1>
+        <p class="lead">Enter your name, email and password. You can sign in without creating a file first. Demo only — localStorage, no server.</p>
+        <div class="is-full" data-field>
+          <p class="auth-label" id="login-role">Account type</p>
+          <div class="auth-roles" role="radiogroup" aria-labelledby="login-role">
+            <label class="auth-role"><input type="radio" name="role" value="client" required checked> Client</label>
+            <label class="auth-role"><input type="radio" name="role" value="admin"> Admin</label>
+          </div>
+        </div>
+        <div class="is-full" data-field>
+          <label for="l-name">Full name</label>
+          <input id="l-name" name="name" type="text" required autocomplete="name" placeholder="Name as on the instruction">
+          <p class="field-error">Enter a name.</p>
+        </div>
+        <div class="is-full" data-field>
+          <label for="l-email">Email address</label>
+          <input id="l-email" name="email" type="email" required autocomplete="email" placeholder="name@firm.demo">
+          <p class="field-error">Enter a valid email.</p>
+        </div>
+        <div class="is-full" data-field>
+          <label for="l-pass">Password</label>
+          <div class="pass-wrap">
+            <input id="l-pass" name="password" type="password" required minlength="6" autocomplete="current-password" placeholder="Enter your password">
+            <button type="button" class="pass-toggle" data-pass="#l-pass">Show</button>
+          </div>
+          <p class="field-error">Password must be at least 6 characters.</p>
+        </div>
+        <div class="auth-check is-full">
+          <label><input type="checkbox" name="remember"> Keep me signed in</label>
+          <button type="button" class="auth-text" data-forgot>Forgot password?</button>
+        </div>
+        <button class="btn auth-submit" type="submit">Sign in</button>
+        <p class="auth-switch">No file yet? <a href="register.html">Create an account</a></p>
+        <a class="auth-back" href="index.html">← Back</a>
+      </form>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js?v=pre1"></script>
+</body>
+</html>
